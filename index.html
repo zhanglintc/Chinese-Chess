@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+  </head>
+
+  <style type="text/css">
+    body {
+      background: lightblue;
+    }
+
+    td {
+      width: 50px;
+      height: 50px;
+      background: lightyellow;
+      font-size: 25px;
+    }
+
+    .corner-left-up {
+      background: url(svg/corner-left-up.svg);
+      background-size: contain;
+    }
+    .corner-right-up {
+      background: url(svg/corner-right-up.svg);
+      background-size: contain;
+    }
+    .corner-left-down {
+      background: url(svg/corner-left-down.svg);
+      background-size: contain;
+    }
+    .corner-right-down {
+      background: url(svg/corner-right-down.svg);
+      background-size: contain;
+    }
+
+    .T-up-left {
+      background: url(svg/T-up-left.svg);
+      background-size: contain;
+    }
+    .T-down-left {
+      background: url(svg/T-down-left.svg);
+      background-size: contain;
+    }
+    .T-up-right {
+      background: url(svg/T-up-right.svg);
+      background-size: contain;
+    }
+    .T-down-right {
+      background: url(svg/T-down-right.svg);
+      background-size: contain;
+    }
+    .T-down-left-right {
+      background: url(svg/T-down-left-right.svg);
+      background-size: contain;
+    }
+
+    .T-left {
+      background: url(svg/T-left.svg);
+      background-size: contain;
+    }
+    .T-right {
+      background: url(svg/T-right.svg);
+      background-size: contain;
+    }
+    .T-up {
+      background: url(svg/T-up.svg);
+      background-size: contain;
+    }
+    .T-down {
+      background: url(svg/T-down.svg);
+      background-size: contain;
+    }
+
+    .transverse-line {
+      background: url(svg/transverse-line.svg);
+      background-size: contain;
+    }
+    .vertical-line {
+      background: url(svg/vertical-line.svg);
+      background-size: contain;
+    }
+
+    .cross {
+      background: url(svg/cross.svg);
+      background-size: contain;
+    }
+    .cross-left-up {
+      background: url(svg/cross-left-up.svg);
+      background-size: contain;
+    }
+    .cross-left-down {
+      background: url(svg/cross-left-down.svg);
+      background-size: contain;
+    }
+    .cross-right-up {
+      background: url(svg/cross-right-up.svg);
+      background-size: contain;
+    }
+    .cross-right-down {
+      background: url(svg/cross-right-down.svg);
+      background-size: contain;
+    }
+    .cross-all {
+      background: url(svg/cross-all.svg);
+      background-size: contain;
+    }
+  </style>
+
+  <body>
+    <title>中国象棋 by zhanglintc</title>
+    <table border="0" frame="box" cellspacing="0" align="center" style="margin-top: 20px;">
+      <tbody>
+        <tr>
+          <td class="corner-left-up">車</td>
+          <td class="T-down">馬</td>
+          <td class="T-down">象</td>
+          <td class="T-down-right">仕</td>
+          <td class="T-down">将</td>
+          <td class="T-down-left">仕</td>
+          <td class="T-down">象</td>
+          <td class="T-down">馬</td>
+          <td class="corner-right-up">車</td>
+        </tr>
+        <tr>
+          <td class="T-right"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross-all"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="T-left"></td>
+        </tr>
+        <tr>
+          <td class="T-right"></td>
+          <td class="cross">砲</td>
+          <td class="cross"></td>
+          <td class="cross-right-up"></td>
+          <td class="cross"></td>
+          <td class="cross-left-up"></td>
+          <td class="cross"></td>
+          <td class="cross">砲</td>
+          <td class="T-left"></td>
+        </tr>
+        <tr>
+          <td class="T-right">卒</td>
+          <td class="cross"></td>
+          <td class="cross">卒</td>
+          <td class="cross"></td>
+          <td class="cross">卒</td>
+          <td class="cross"></td>
+          <td class="cross">卒</td>
+          <td class="cross"></td>
+          <td class="T-left">卒</td>
+        </tr>
+        <tr>
+          <td class="corner-left-down"></td>
+          <td class="T-up"></td>
+          <td class="T-up"></td>
+          <td class="T-up"></td>
+          <td class="T-up"></td>
+          <td class="T-up"></td>
+          <td class="T-up"></td>
+          <td class="T-up"></td>
+          <td class="corner-right-down"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div align="center">
+      <div align="center" style="display: table-cell; height: 50px; vertical-align: middle; font-size: 25px;">楚 &nbsp&nbsp&nbsp 河 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 汉 &nbsp&nbsp&nbsp&nbsp 界</div>
+    </div>
+    <table border="0" frame="box" cellspacing="0" align="center" style="color: red;">
+      <tbody>
+        <tr>
+          <td class="corner-left-up"></td>
+          <td class="T-down"></td>
+          <td class="T-down"></td>
+          <td class="T-down"></td>
+          <td class="T-down"></td>
+          <td class="T-down"></td>
+          <td class="T-down"></td>
+          <td class="T-down"></td>
+          <td class="corner-right-up"></td>
+        </tr>
+        <tr>
+          <td class="T-right">兵</td>
+          <td class="cross"></td>
+          <td class="cross">兵</td>
+          <td class="cross"></td>
+          <td class="cross">兵</td>
+          <td class="cross"></td>
+          <td class="cross">兵</td>
+          <td class="cross"></td>
+          <td class="T-left">兵</td>
+        </tr>
+        <tr>
+          <td class="T-right"></td>
+          <td class="cross">炮</td>
+          <td class="cross"></td>
+          <td class="cross-right-down"></td>
+          <td class="cross"></td>
+          <td class="cross-left-down"></td>
+          <td class="cross"></td>
+          <td class="cross">炮</td>
+          <td class="T-left"></td>
+        </tr>
+        <tr>
+          <td class="T-right"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross-all"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="cross"></td>
+          <td class="T-left"></td>
+        </tr>
+        <tr>
+          <td class="corner-left-down">車</td>
+          <td class="T-up">馬</td>
+          <td class="T-up">相</td>
+          <td class="T-up-right">士</td>
+          <td class="T-up">帥</td>
+          <td class="T-up-left">士</td>
+          <td class="T-up">相</td>
+          <td class="T-up">馬</td>
+          <td class="corner-right-down">車</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      $("td").attr("align", "center");
+    </script>
+  </body>
+</html>
+
+
